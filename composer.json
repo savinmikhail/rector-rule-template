@@ -1,0 +1,52 @@
+{
+    "name": "savinmikhail/enforce-aaa-pattern-rector",
+    "description": "Rector rule to enforce the presence of 'arrange', 'act', 'assert' structure of phpunit tests",
+    "license": "MIT",
+    "type": "rector-extension",
+    "keywords": [
+        "static analysis",
+        "dev"
+    ],
+    "authors": [
+        {
+            "name": "Savin Mikhail",
+            "email": "mikhail.d.savin@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/savinmikhail/EnforceAaaPatternRector",
+    "require": {
+        "php": ">=8.2",
+        "rector/rector": "^2.1.4"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.45",
+        "friendsofphp/php-cs-fixer": "^3.68.5",
+        "icanhazstring/composer-unused": "^0.8.11",
+        "maglnet/composer-require-checker": "^4.15",
+        "phpunit/phpunit": "^10.5.45",
+        "phpyh/coding-standard": "^2.6.2",
+        "savinmikhail/add_named_arguments_rector": "^0.1.18",
+        "savinmikhail/dist-size-optimizer": "^0.2.0"
+    },
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "SavinMikhail\\EnforceAaaPatternRector\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SavinMikhail\\Tests\\EnforceAaaPatternRector\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.2"
+        },
+        "sort-packages": true
+    }
+}
